@@ -1,0 +1,29 @@
+.border {
+    border: 1px solid #000000; /* Zwarte border */
+    padding: 20px;
+    border-radius: 5px;
+    border-width: 3px;
+@media (max-width: 768px) {
+        margin-top: 10px; /* Voeg wat ruimte toe binnen de blokken op mobiel */
+}
+}
+.time-block {
+    margin-bottom: 10px; /* Voeg wat ruimte toe onder de blokken */
+}
+.form-control:focus {
+    border-color: red !important; /* Rode border bij klik */
+    box-shadow: 0 0 0 0.25rem rgba(255, 0, 0, 0.25) !important; /* Rode shadow bij klik */
+}
+.form-select:focus {
+    border-color: red !important; /* Rode border bij klik */
+    box-shadow: 0 0 0 0.25rem rgba(255, 0, 0, 0.25) !important; /* Rode shadow bij klik */
+}
+.none {
+    display: none;
+}
+#reservationDetails {
+    @media (max-width: 768px){
+    margin-top: 20px; /* Voeg wat ruimte toe boven de details op het mobiel menu */
+    
+    }
+}

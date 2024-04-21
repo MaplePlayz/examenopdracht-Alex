@@ -1,0 +1,33 @@
+.titel {
+    color: #ff0000; /* Rode text */
+    text-align: center; /* Centreer de tekst */
+    display: grid; /* Gebruik grid layout */
+    place-items: center; /* Centreer de tekst verticaal en horizontaal */
+    margin-top: 5px; /* Voeg wat ruimte toe boven de titel */
+}
+.carousel-item img {
+    max-width: 60%; /* Pas de breedte van de afbeeldingen aan */
+    margin: 0 auto; /* Centreer de afbeeldingen horizontaal */
+    padding: 10px; /* Voeg een tussenrand aan de buitenkant toe */
+
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    
+    filter: invert(1); /* Keer de kleur van de pijl om voor beter contrast */
+}
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-width: 100%; /* Pas de breedte van de afbeeldingen aan */
+    }
+    .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    
+    /*block around arrows*/
+    background-color: #00f2ff; /* voor duidelijkheid buttons mobiel */
+}
+}
+#carouselExampleControls {
+    z-index: 0; /* lager index zodat carrousel achter menu komt */
+  }
+

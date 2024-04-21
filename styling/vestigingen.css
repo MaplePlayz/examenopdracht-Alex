@@ -1,0 +1,19 @@
+.contact-block {
+    border: 2px solid #f00 !important; /* Rode border */
+    border-radius: 10px; /* Afgeronde hoeken */
+    padding: 20px; /* Ruimte binnen de blokken */
+    margin-bottom: 20px; /* Voeg wat ruimte toe onder de blokken */
+    background-color: #f9f9f9; /* Lichtgrijze achtergrond */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Lichtgrijze schaduw */
+}
+
+.contact-block h3 {
+    margin-top: 0; /* ruimte boven de titel */
+}
+.contact-block p {
+    margin-bottom: 10px; /* Voeg wat ruimte toe onder de tekst */
+}
+.contact-block:hover {
+    transform: translateY(-3px); /* Verschuif het blok iets omhoog bij hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Voeg een lichte schaduw toe */
+}

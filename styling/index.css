@@ -1,0 +1,15 @@
+.intro {
+    background-image: url('../afbeeldingen/bodybuilding.jpg'); /* Achtergrond afbeelding */
+    background-size: cover; /* Schaal de afbeelding */
+    background-position: center; /* Centreer de afbeelding */
+    color: #ffffff; /* witte tekst */
+    padding-top: 50px; /* Extra padding */
+}
+
+p {
+    font-weight:600 /* Vetgedrukte tekst om het duidelijker te maken */
+}
+
+.red-text {
+    color: #ff0000; /* rode tekst */
+}

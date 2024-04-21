@@ -1,0 +1,117 @@
+.navbar .nav-link {
+  color: black;
+  /* Zwarte text */
+}
+.navbar .nav-link:hover {
+  color: red;
+  /* Rode text */
+}
+.navbar .navbar-brand img {
+  width: 110px;
+  /* Pas de breedte van het logo aan */
+  height: 110px;
+  /* Pas de hoogte van het logo aan */
+}
+@media (max-width: 992px) {
+  .navbar .navbar-collapse {
+    position: fixed;
+    /* Fixed possitie */
+    top: 0;
+    /* start van top */
+    left: 0;
+    /* start van links */
+    padding-left: 15px;
+    /* Voeg wat padding toe aan de linkerkant */
+    width: 100%;
+    /* 100% breedte */
+    background-color: white;
+    /* Witte achtergrond */
+    height: 100%;
+    /* 100% hoogte */
+    transform: translateX(-100%);
+    /* Start buiten het scherm */
+    transition: transform 0.3s ease-in-out;
+    /* Voeg een animatie toe */
+    z-index: 1000; /* Set a higher z-index for the mobile menu */
+  }
+  .navbar .navbar-collapse.show {
+    transform: translateX(0);
+    /* Schuif naar binnen */
+  }
+  #carouselExampleControls {
+    z-index: 0; /* lager index zodat carrousel achter menu komt */
+  }
+}
+.navbar .nav-link {
+  margin-left: 5px;
+  /* Voeg wat ruimte toe aan de linkerkant */
+  margin-right: 5px;
+  /* Voeg wat ruimte toe aan de rechterkant */
+}
+.hovered {
+  position: relative;
+  /* relatieve positie */
+  text-decoration: none;
+  /* normale underline weghalen */
+}
+.hovered::before {
+  content: '';
+  /* Voeg een leeg element toe */
+  position: absolute;
+  /* Absolute positie */
+  left: 0;
+  /* start links */
+  bottom: -1px;
+  /* offset om onder de tekst te verschijnen */
+  width: 0;
+  /* start met 0 */
+  height: 1px;
+  /* 1px hoog */
+  background-color: red;
+  /*  kleur underline */
+  animation: slide-from-left 0.3s forwards;
+  /* animatie */
+}
+@keyframes slide-from-left {
+  0% {
+    width: 0;
+    /* start met 0 breedte */
+    transform: translateX(-100%);
+    /* slide van links */
+  }
+  100% {
+    width: 100%;
+    /* einde breedte */
+    transform: translateX(0);
+    /* einde slider */
+  }
+}
+@media (min-width: 992px) {
+  .mobile-menu {
+    display: none;
+    /* Verberg logo hamburger menu op grote schermen */
+  }
+}
+@media (max-width: 992px) {
+  #navbarNav {
+    width: 50%;
+    /* 50% breedte hamburger menu */
+  }
+}
+footer {
+  background-color: #f00;
+  /* achtergrond kleur */
+  color: #fff;
+  /* tekst kleur */
+  padding: 20px 0;
+  /* exra padding ruimte */
+  text-align: center;
+  /* tekst naar center */
+  margin-top: 30px;
+}
+@media (max-width: 576px) {
+  footer {
+    font-size: 14px;
+    /* font size omlaag voor mobiel */
+  }
+}
